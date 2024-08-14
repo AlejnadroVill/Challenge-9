@@ -13,7 +13,7 @@ function renderLicenseLink(data) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(data) {
-return `${renderLicenseBadge(data)}
+return `${renderLicenseBadge(data)} <br>
 This project is under an [License Link](${renderLicenseLink(data)}). See the LICENSE file for more details.`
 }
 
@@ -31,13 +31,13 @@ Find the repo [here](https://github.com/${data.username}/${data.repo}).
 
 ## Table of Contents
 - [Resources](#resources)
-- [Usage](#usage)
 - [Get Started](#get-started)
+- [Usage](#usage)
 - [License](#license)
 - [Credits](#credits)
 
 ## Resources
-Remember to fill out your resources
+${data.resources}
 
 ## Get Started
 ${data.init}
